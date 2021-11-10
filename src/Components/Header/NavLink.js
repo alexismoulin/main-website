@@ -1,5 +1,3 @@
-import "./NavLink.css";
-
 function NavLink(props) {
   return (
     <li className="nav-item">

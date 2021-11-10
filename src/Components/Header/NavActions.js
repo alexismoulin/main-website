@@ -1,5 +1,3 @@
-import "./NavActions.css";
-
 function NavActions(props) {
   return (
     <div className="collapse navbar-collapse" id="navbarResponsive">

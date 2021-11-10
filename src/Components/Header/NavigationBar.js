@@ -1,5 +1,3 @@
-import "./NavigationBar.css";
-
 function NavigationBar(props) {
   return (
     <nav

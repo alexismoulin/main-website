@@ -1,6 +1,4 @@
-import screenshot1 from "../../Assets/screenshot1.png";
-
-function DeviceScreenshot() {
+function DeviceScreenshot(props) {
   return (
     <div className="device-wrapper">
       <div
@@ -10,7 +8,7 @@ function DeviceScreenshot() {
         data-color="black"
       >
         <div className="screen bg-black">
-          <img src={screenshot1} style={styles.screenshot} alt="screenshot" />
+          <img src={props.screenshot} style={styles.screenshot} alt="screenshot" />
         </div>
       </div>
     </div>

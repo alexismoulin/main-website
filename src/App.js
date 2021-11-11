@@ -1,12 +1,16 @@
 import "./css/styles.css";
-import Header from "./Components/Header/Header";
+import NavigationBar from "./Components/Navigation/NavigationBar";
 import Masthead from "./Components/Masthead/Masthead";
+import Testimonial from "./Components/Testimonial/Testimonial";
+import Features from "./Components/Features/Features";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <NavigationBar />
       <Masthead />
+      <Testimonial />
+      <Features />
     </div>
   );
 }

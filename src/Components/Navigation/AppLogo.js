@@ -1,13 +1,26 @@
-import "./AppLogo.css";
 import logo from "../../Assets/logo.png";
 
 function AppLogo() {
   return (
     <div className="navbar-brand fw-bold">
-      <img className="image-logo" src={logo} alt="forecasts"/>
-      <div className="text-logo">AI Stock Forecasts</div>
+      <img style={styles.imageLogo} src={logo} alt="forecasts"/>
+      <div style={styles.textLogo}>AI Stock Forecasts</div>
     </div>
   );
 }
 
 export default AppLogo;
+
+const styles = {
+  imageLogo: {
+    flex: 1,
+    width: "2rem",
+    height: "2rem",
+    verticalAlign: "middle"
+  },
+  textLogo: {
+    display: "inline-block",
+    marginLeft: "1rem",
+    fontWeight: 700
+  }
+}

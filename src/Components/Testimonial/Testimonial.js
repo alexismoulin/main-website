@@ -1,6 +1,6 @@
 function Testimonial() {
   return (
-    <aside className="text-center bg-gradient-primary-to-secondary">
+    <aside className="text-center bg-gradient-primary-to-secondary" style={styles.asideLayout}>
       <div className="container px-5">
         <div className="row gx-5 justify-content-center">
           <div className="col-xl-8">
@@ -16,3 +16,10 @@ function Testimonial() {
 }
 
 export default Testimonial;
+
+const styles = {
+  asideLayout: {
+      paddingTop: "5rem",
+      paddingBottom: "4rem"
+  }
+}

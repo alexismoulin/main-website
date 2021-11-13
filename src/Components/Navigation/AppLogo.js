@@ -1,10 +1,20 @@
-import logo from "../../Assets/logo.png";
+function AppLogo(props) {
+  function selectAppData() {
+    console.log("done");
+  }
 
-function AppLogo() {
   return (
-    <div className="navbar-brand fw-bold">
-      <img style={styles.imageLogo} src={logo} alt="forecasts"/>
-      <div style={styles.textLogo}>AI Stock Forecasts</div>
+    <div
+      className="navbar-brand fw-bold"
+      style={styles.divLogo}
+      onClick={selectAppData}
+    >
+      <img
+        style={styles.imageLogo}
+        src={require(`../../Assets/${props.data.assetFolder}/logo.png`).default}
+        alt={props.data.apptitle}
+      />
+      <div style={styles.textLogo}>{props.data.appTitle}</div>
     </div>
   );
 }
@@ -12,15 +22,18 @@ function AppLogo() {
 export default AppLogo;
 
 const styles = {
+  divLogo: {
+    cursor: "pointer",
+  },
   imageLogo: {
     flex: 1,
     width: "2rem",
     height: "2rem",
-    verticalAlign: "middle"
+    verticalAlign: "middle",
   },
   textLogo: {
     display: "inline-block",
     marginLeft: "1rem",
-    fontWeight: 700
-  }
-}
+    fontWeight: 700,
+  },
+};

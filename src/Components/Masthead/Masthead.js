@@ -3,7 +3,7 @@ import DeviceMockup from "../DeviceMockUp/DeviceMockup";
 
 import screenshot from "../../Models/screenshot";
 
-function Masthead() {
+function Masthead(props) {
   return (
     <header className="masthead">
       <div className="container px-5">

@@ -1,4 +1,6 @@
+import React, { useState } from "react";
 import "./css/styles.css";
+import appModel from "./Models/appModel";
 import NavigationBar from "./Components/Navigation/NavigationBar";
 import Masthead from "./Components/Masthead/Masthead";
 import Testimonial from "./Components/Testimonial/Testimonial";
@@ -9,16 +11,19 @@ import BadgeSection from "./Components/BadgeSection/BadgeSection";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+
+  const [appData, setAppData] = useState(appModel.FORECAST)
+
   return (
     <div className="App">
-      <NavigationBar />
-      <Masthead />
-      <Testimonial />
-      <Features />
-      <Subsection />
-      <CallToAction />
-      <BadgeSection />
-      <Footer />
+      <NavigationBar data={appData}/>
+      <Masthead data={appData}/>
+      <Testimonial data={appData}/>
+      <Features data={appData}/>
+      <Subsection data={appData}/>
+      <CallToAction data={appData}/>
+      <BadgeSection data={appData}/>
+      <Footer data={appData}/>
     </div>
   );
 }

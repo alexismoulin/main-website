@@ -1,4 +1,4 @@
-function CallToAction() {
+function CallToAction(props) {
   return (
     <section className="cta" id="download">
       <div className="cta-content">
@@ -10,7 +10,7 @@ function CallToAction() {
           </h2>
           <a
             className="btn btn-outline-light py-3 px-4 rounded-pill"
-            href="https://apps.apple.com/us/app/ai-stock-forecasts/id1527494965?ign-mpt=uo%3D2"
+            href={props.data.appStoreURL}
           >
             Download for free
           </a>

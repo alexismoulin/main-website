@@ -14,7 +14,8 @@ const appModel = {
         featureTitle4: "Free to Use",
         featureMessage4: "The App is free to download and use without any add",
         subsectionTitle: "Take advantage of Artificial Intelligence",
-        subsectionMessage: "This app predicts Fortune 100 companies stock price evolution through sentiment analysis using Twitter and News-api as the sources for data analysis./n/nYou can also add, manage and save your own companies as well as cryptocurrencies to get a calculated score based on business news",
+        subsectionMessage1: "This app predicts Fortune 100 companies stock price evolution through sentiment analysis using Twitter and News-api as the sources for data analysis.",
+        subsectionMessage2: "You can also add, manage and save your own companies as well as cryptocurrencies to get a calculated score based on business news",
         appStoreURL: "https://apps.apple.com/us/app/ai-stock-forecasts/id1527494965?ign-mpt=uo%3D2",
         githubURL: "https://github.com/alexismoulin/AI-Stock-Forecasts",
         privacyPolicyURL: "https://alexismoulin.github.io/AI-Stock-Forecasts/"

@@ -1,9 +1,9 @@
 import badge from "../../Assets/app-store-badge.svg";
 
-function AppleStoreBadge() {
+function AppleStoreBadge(props) {
   return (
     <div className="d-flex flex-column flex-lg-row align-items-center">
-      <a href="https://apps.apple.com/us/app/ai-stock-forecasts/id1527494965?ign-mpt=uo%3D2">
+      <a href={props.data.appStoreURL}>
         <img className="app-badge" src={badge} alt="Apple Store" />
       </a>
     </div>

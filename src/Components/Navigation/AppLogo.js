@@ -1,7 +1,13 @@
+import appModel from "../../Models/appModel";
+
 function AppLogo(props) {
+
+  // Helper functions
+
   function selectAppData() {
-    console.log("done");
   }
+
+  // Component Body
 
   return (
     <div

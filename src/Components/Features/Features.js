@@ -12,24 +12,24 @@ function Features(props) {
                 <FeatureItem
                   title={props.data.featureTitle1}
                   message={props.data.featureMessage1}
-                  icon="bi-phone"
+                  icon={props.data.featureIcon1}
                 />
                 <FeatureItem
                   title={props.data.featureTitle2}
                   message={props.data.featureMessage2}
-                  icon="bi-camera"
+                  icon={props.data.featureIcon2}
                 />
               </div>
               <div className="row">
                 <FeatureItem
                   title={props.data.featureTitle3}
                   message={props.data.featureMessage3}
-                  icon="bi-gift"
+                  icon={props.data.featureIcon3}
                 />
                 <FeatureItem
                   title={props.data.featureTitle4}
                   message={props.data.featureMessage4}
-                  icon="bi-patch-check"
+                  icon={props.data.featureIcon4}
                 />
               </div>
             </div>

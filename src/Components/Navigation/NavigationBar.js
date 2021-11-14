@@ -10,6 +10,7 @@ function NavigationBar(props) {
     >
       <div className="container px-5">
         <AppLogo data={props.data}/>
+        <AppLogo data={props.data}/>
         <NavActions>
           <NavLink href="#features">Features</NavLink>
           <NavLink href="#download">Download</NavLink>

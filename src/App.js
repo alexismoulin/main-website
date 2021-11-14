@@ -12,7 +12,7 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
 
-  const [appData, setAppData] = useState(appModel.FORECAST)
+  const [appData, setAppData] = useState(appModel.FORECASTS)
 
   return (
     <div className="App">

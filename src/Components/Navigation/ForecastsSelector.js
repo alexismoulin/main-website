@@ -1,11 +1,14 @@
 import appModel from "../../Models/appModel";
+import forecastsLogo from "../../Assets/forecasts/logo.png"
 
-function AppLogo(props) {
+function ForecastsSelector(props) {
 
   // Helper functions
 
-  function selectAppData() {
-  }
+  function selectAppHandler() {
+    const { FORECASTS } = appModel;
+    props.onAppSelection(FORECASTS);
+}
 
   // Component Body
 
@@ -13,19 +16,19 @@ function AppLogo(props) {
     <div
       className="navbar-brand fw-bold"
       style={styles.divLogo}
-      onClick={selectAppData}
+      onClick={selectAppHandler}
     >
       <img
         style={styles.imageLogo}
-        src={require(`../../Assets/${props.data.assetFolder}/logo.png`).default}
-        alt={props.data.apptitle}
+        src={forecastsLogo}
+        alt=""
       />
-      <div style={styles.textLogo}>{props.data.appTitle}</div>
+      <div style={styles.textLogo}>AI Stock Forecasts</div>
     </div>
   );
 }
 
-export default AppLogo;
+export default ForecastsSelector;
 
 const styles = {
   divLogo: {

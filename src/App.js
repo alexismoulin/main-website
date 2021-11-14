@@ -14,9 +14,14 @@ function App() {
 
   const [appData, setAppData] = useState(appModel.FORECASTS)
 
+  function selectAppHandler(selectedApp) {
+    console.log(selectedApp)
+    setAppData(selectedApp);
+  }
+
   return (
     <div className="App">
-      <NavigationBar data={appData}/>
+      <NavigationBar data={appData} onAppSelection={selectAppHandler}/>
       <Masthead data={appData}/>
       <Testimonial data={appData}/>
       <Features data={appData}/>

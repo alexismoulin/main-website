@@ -33,6 +33,7 @@ export default ForecastsSelector;
 const styles = {
   divLogo: {
     cursor: "pointer",
+    paddingRight: 50
   },
   imageLogo: {
     flex: 1,

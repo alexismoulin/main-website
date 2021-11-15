@@ -8,7 +8,7 @@ function DeviceMockup(props) {
   // type: masthead vs features
 
   const devicePreview =
-    props.deviceType === "iPhoneX" ? (
+    props.data.deviceType === "iPhoneX" ? (
       <DeviceScreenshot screenshot={props.screenshot} />
     ) : (
       <WatchScreenshot screenshot={props.screenshot} />
@@ -16,7 +16,7 @@ function DeviceMockup(props) {
 
   return (
     <div className={`${props.type}-device-mockup`}>
-      <BackgroundCircle />
+      <BackgroundCircle data={props.data}/>
       <CrossSVG />
       <CircleSVG />
       {devicePreview}

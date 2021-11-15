@@ -33,6 +33,7 @@ export default FiltersSelector;
 const styles = {
   divLogo: {
     cursor: "pointer",
+    paddingRight: 70
   },
   imageLogo: {
     flex: 1,

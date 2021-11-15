@@ -1,4 +1,7 @@
-function BackgroundCircle() {
+function BackgroundCircle(props) {
+
+  console.log(props)
+
   return (
     <svg
       className="circle"
@@ -7,8 +10,8 @@ function BackgroundCircle() {
     >
       <defs>
         <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-          <stop className="gradient-start-color" offset="0%"></stop>
-          <stop className="gradient-end-color" offset="100%"></stop>
+          <stop className="gradient-start-color" style={{stopColor: props.data.startColor}} offset="0%"></stop>
+          <stop className="gradient-end-color" style={{stopColor: props.data.endColor}} offset="100%"></stop>
         </linearGradient>
       </defs>
       <circle cx="50" cy="50" r="50"></circle>

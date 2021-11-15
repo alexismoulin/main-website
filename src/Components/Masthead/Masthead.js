@@ -10,6 +10,7 @@ function Masthead(props) {
           <div className="col-lg-6">
             <DeviceMockup
               type="masthead"
+              deviceType={props.data.deviceType}
               screenshot={require(`../../Assets/${props.data.assetFolder}/screenshot1.png`).default}
             />
           </div>

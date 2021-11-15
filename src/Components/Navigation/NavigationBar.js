@@ -2,6 +2,7 @@ import NavLink from "./NavLink";
 import NavActions from "./NavActions";
 import ForecastsSelector from "./ForecastsSelector";
 import FiltersSelector from "./FiltersSelector";
+import WorkoutsSelector from "./WorkoutsSelector";
 
 function NavigationBar(props) {
 
@@ -17,6 +18,7 @@ function NavigationBar(props) {
       <div className="container px-5">
         <ForecastsSelector onAppSelection={selectAppHandler} />
         <FiltersSelector onAppSelection={selectAppHandler} />
+        <WorkoutsSelector onAppSelection={selectAppHandler} />
         <NavActions>
           <NavLink href="#features">Features</NavLink>
           <NavLink href="#download">Download</NavLink>

@@ -11368,6 +11368,8 @@ section {
   cursor: pointer;
 }
 
+/* IphoneX Mockup */
+
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
   padding-bottom: 198.898071625%;
 }
@@ -11385,6 +11387,32 @@ section {
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
+  display: none;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Apple Watch Mockup */
+
+.device[data-device=Watch][data-orientation=portrait][data-color=black] {
+  padding-bottom: 198.898071625%;
+}
+
+.device[data-device=Watch][data-orientation=portrait][data-color=black] .screen {
+  top: 3.1855955679%;
+  left: 6.8870523416%;
+  width: 86.2258953168%;
+  height: 93.6288088643%;
+}
+
+.device[data-device=Watch][data-orientation=portrait][data-color=black]::after {
+  content: "";
+  background-image: url("../Assets/watch.png");
+}
+
+.device[data-device=Watch][data-orientation=portrait][data-color=black] .button {
   display: none;
   top: 0%;
   left: 0%;

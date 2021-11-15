@@ -37,10 +37,8 @@ function Features(props) {
           <div className="col-lg-4 order-lg-0">
             <DeviceMockup
               type="features"
-              screenshot={
-                require(`../../Assets/${props.data.assetFolder}/screenshot2.png`)
-                  .default
-              }
+              deviceType={props.data.deviceType}
+              screenshot={require(`../../Assets/${props.data.assetFolder}/screenshot2.png`).default}
             />
           </div>
         </div>

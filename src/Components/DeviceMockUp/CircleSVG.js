@@ -1,7 +1,8 @@
-function CircleSVG() {
+function CircleSVG(props) {
   return (
     <svg
       className="shape-2 d-none d-sm-block"
+      style={{fill: props.data.startColor}}
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >

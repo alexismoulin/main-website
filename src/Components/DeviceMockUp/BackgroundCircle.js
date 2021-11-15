@@ -1,7 +1,4 @@
 function BackgroundCircle(props) {
-
-  console.log(props)
-
   return (
     <svg
       className="circle"

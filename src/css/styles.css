@@ -11282,8 +11282,16 @@ html {
   background-color: #000 !important;
 }
 
-.bg-gradient-primary-to-secondary {
+.bg-forecasts-gradient-primary-to-secondary {
   background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+}
+
+.bg-filters-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, #dddd7f, #7cceb3) !important;
+}
+
+.bg-workouts-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, #be71df, #f6c552) !important;
 }
 
 .font-alt {

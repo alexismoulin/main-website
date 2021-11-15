@@ -16,9 +16,9 @@ function DeviceMockup(props) {
 
   return (
     <div className={`${props.type}-device-mockup`}>
-      <BackgroundCircle data={props.data}/>
-      <CrossSVG />
-      <CircleSVG />
+      <BackgroundCircle data={props.data} />
+      <CrossSVG data={props.data} />
+      <CircleSVG data={props.data} />
       {devicePreview}
     </div>
   );

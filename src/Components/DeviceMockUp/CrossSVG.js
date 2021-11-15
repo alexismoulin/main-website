@@ -1,7 +1,8 @@
-function CrossSVG() {
+function CrossSVG(props) {
   return (
     <svg
       className="shape-1 d-none d-sm-block"
+      style={{fill: props.data.startColor}}
       viewBox="0 0 240.83 240.83"
       xmlns="http://www.w3.org/2000/svg"
     >

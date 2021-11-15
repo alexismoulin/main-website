@@ -3,7 +3,7 @@ import githubLogo from "../../Assets/github-logo.svg"
 function BadgeSection(props) {
 
     return(
-        <section className="bg-gradient-primary-to-secondary" style={styles.sectionLayout}>
+        <section className={`bg-${props.data.assetFolder}-gradient-primary-to-secondary`} style={styles.sectionLayout}>
             <div className="container px-5">
                 <h2 className="text-center text-white font-alt mb-4">Source code available on</h2>
                 <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center">

@@ -10,8 +10,8 @@ function Subsection(props) {
             <div className="px-5 px-sm-0">
               <img
                 className="img-fluid rounded-circle"
-                src="https://source.unsplash.com/u8Jn2rzYIps/900x900"
-                alt="..."
+                src={require(`../../Assets/${props.data.assetFolder}/subSection-picture.jpg`).default}
+                alt="Artistic"
               />
             </div>
           </div>

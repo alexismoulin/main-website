@@ -11287,7 +11287,7 @@ html {
 }
 
 .bg-filters-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #dddd7f, #7cceb3) !important;
+  background: linear-gradient(45deg, #f7ca45, #7cceb3) !important;
 }
 
 .bg-workouts-gradient-primary-to-secondary {
@@ -11298,8 +11298,22 @@ html {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
-.text-gradient {
+.text-forecasts-gradient {
   background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-filters-gradient {
+  background: -webkit-linear-gradient(#f7ca45, #73fcd6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-workouts-gradient {
+  background: -webkit-linear-gradient(#be71df, #f6c552);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

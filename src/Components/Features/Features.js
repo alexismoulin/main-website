@@ -13,11 +13,13 @@ function Features(props) {
                   title={props.data.featureTitle1}
                   message={props.data.featureMessage1}
                   icon={props.data.featureIcon1}
+                  colorSet={props.data.assetFolder}
                 />
                 <FeatureItem
                   title={props.data.featureTitle2}
                   message={props.data.featureMessage2}
                   icon={props.data.featureIcon2}
+                  colorSet={props.data.assetFolder}
                 />
               </div>
               <div className="row">
@@ -25,11 +27,13 @@ function Features(props) {
                   title={props.data.featureTitle3}
                   message={props.data.featureMessage3}
                   icon={props.data.featureIcon3}
+                  colorSet={props.data.assetFolder}
                 />
                 <FeatureItem
                   title={props.data.featureTitle4}
                   message={props.data.featureMessage4}
                   icon={props.data.featureIcon4}
+                  colorSet={props.data.assetFolder}
                 />
               </div>
             </div>

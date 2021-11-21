@@ -11,7 +11,10 @@ function Masthead(props) {
             <DeviceMockup
               type="masthead"
               data={props.data}
-              screenshot={require(`../../Assets/${props.data.assetFolder}/screenshot1.png`).default}
+              screenshot={
+                require(`../../Assets/${props.data.assetFolder}/screenshot1.png`)
+                  .default
+              }
             />
           </div>
         </div>
@@ -21,14 +24,3 @@ function Masthead(props) {
 }
 
 export default Masthead;
-
-/*
-const styles = {
-  lightBackground: {
-    backgroundColor: "#f8f9fa"
-  },
-  darkBackground: {
-    backgroundColor: "#8d8d93"
-  }
-};
-*/

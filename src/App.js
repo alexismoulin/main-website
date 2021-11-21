@@ -2,19 +2,11 @@ import React, { useState } from "react";
 import CSSTransition from "react-transition-group/CSSTransition";
 
 import "./css/styles.css";
-import "./AppBody.css";
 
 import appModel from "./Models/appModel";
 
 import NavigationBar from "./Components/Navigation/NavigationBar";
-import Masthead from "./Components/Masthead/Masthead";
-import Testimonial from "./Components/Testimonial/Testimonial";
-import Features from "./Components/Features/Features";
-import Subsection from "./Components/SubSection/Subsection";
-import CallToAction from "./Components/CallToAction/CallToAction";
-import BadgeSection from "./Components/BadgeSection/BadgeSection";
-import Footer from "./Components/Footer/Footer";
-import Modal from "./Modal";
+import AppBody from "./Components/AppBody/AppBody";
 
 function App() {
   const [appData, setAppData] = useState(appModel.FORECASTS);
@@ -22,8 +14,10 @@ function App() {
 
   function selectAppHandler(selectedApp) {
     setShowAppBody(false);
-    setAppData(selectedApp);
-    setTimeout(() => setShowAppBody(true), 500)
+    setTimeout(() => {
+      setAppData(selectedApp);
+      setShowAppBody(true)
+    }, 500)
   }
 
   return (
@@ -41,7 +35,7 @@ function App() {
           exitActive: "AppBodyClosed",
         }}
       >
-        <Modal show={showAppBody}/>
+        <AppBody show={showAppBody} data={appData}/>
       </CSSTransition>
     </div>
   );

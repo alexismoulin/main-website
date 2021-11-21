@@ -1,9 +1,9 @@
 .AppBodyOpen {
-  animation: openModal 0.5s ease-in-out forwards;
+  animation: openAppBody 0.5s ease-in-out forwards;
 }
 
 .AppBodyClosed {
-  animation: closedModal 0.5s ease-in-out forwards;
+  animation: closedAppBody 0.5s ease-in-out forwards;
 }
 
 @keyframes openAppBody {
@@ -28,10 +28,10 @@
   }
   50% {
     opacity: 0.8;
-    transform: translateX(60%);
+    transform: translateX(-20%);
   }
   100% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
